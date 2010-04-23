@@ -1,3 +1,5 @@
-source/Task/bin/
-source/Task/obj/
+source/**/bin/
+source/**/obj/
+output/
 *.suo
+*.user
