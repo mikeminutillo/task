@@ -2,3 +2,29 @@ Task
 ====
 
 A container for automating your dev environment
+
+Uses MEF to aggregate tasks from different assemblies into a unified tool
+
+To run a task use
+> task <command name> [arguments...]
+
+The following command shows a list of all available tasks
+> task list
+
+If you want a description as well use
+> task list --full
+
+If you want help on a particular task use
+> task help <task name>
+
+Arguments are specified by simply including them after the task name. ie.
+> task generate controller session create destory
+
+Switches can be specified with --switch
+Currently the only switch defined (by the base app. List exposes one as well) is:
+> task --version
+Which will show the version and then quit
+
+Options can be specified by using -option value
+> task db:migrate -version 15
+
