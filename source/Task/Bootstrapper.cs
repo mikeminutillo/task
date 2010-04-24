@@ -22,7 +22,7 @@ namespace Task
                 Path.Combine(assemblyDir, "Tasks"),
                 currentDir,
                 Path.Combine(currentDir, "Tasks")
-            };
+            }.Unique();
 
             var dirCatalogs = paths.Where(x => Directory.Exists(x))
                                    .Select(x => new DirectoryCatalog(x, "*.Tasks.dll"));

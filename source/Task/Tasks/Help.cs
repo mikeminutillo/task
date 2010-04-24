@@ -9,7 +9,7 @@ namespace Task
     {
         public string GetHelpText()
         {
-            return "> task help <command name>\n\nDisplays help about the specified command.\nFor a full list of commands use 'task list'";
+            return "> task help <command name>\n\nDisplays help about the specified command.\nFor a full list of commands use 'task list' or 'task list --full'";
         }
 
         public void Execute(string[] args)

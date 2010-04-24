@@ -13,6 +13,7 @@ namespace Task
             catch (Exception ex)
             {
                 Console.Error.WriteLine(ex.Message);
+                Console.Error.WriteLine("for help try 'task help'");
                 Environment.Exit(-1);
             }
 

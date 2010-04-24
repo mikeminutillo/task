@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace Task
@@ -12,5 +13,11 @@ namespace Task
                 action(item);
             }
         }
+
+        public static IEnumerable<T> Unique<T>(this IEnumerable<T> target)
+        {
+            return target.GroupBy(x => x).Select(x => x.Key);
+        }
+
     }
 }
